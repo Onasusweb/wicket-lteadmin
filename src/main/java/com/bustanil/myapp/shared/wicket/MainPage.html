@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CBS | FrontEnd</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+<div class="wrapper">
+
+    <header class="main-header">
+        <!-- Logo -->
+        <a href="#" wicket:id="topLeftLogo" class="logo">
+            <!-- mini logo for sidebar mini 50x50 pixels -->
+            <span class="logo-mini"><b>C</b>BS</span>
+            <!-- logo for regular state and mobile devices -->
+            <span class="logo-lg"><b>CBS</b>FrontEnd</span>
+        </a>
+        <!-- Header Navbar: style can be found in header.less -->
+        <nav class="navbar navbar-static-top" role="navigation">
+            <!-- Sidebar toggle button-->
+            <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                <span class="sr-only">Toggle navigation</span>
+            </a>
+            <div class="navbar-custom-menu">
+                <ul class="nav navbar-nav">
+                    <!-- User Account: style can be found in dropdown.less -->
+                    <li class="dropdown user user-menu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <img src="" wicket:id="userImageRight" class="user-image" alt="User Image">
+                            <span class="hidden-xs"><span wicket:id="userRoleNameRight"></span></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <!-- User image -->
+                            <li class="user-header">
+                                <img src="" wicket:id="userImageHeader" class="img-circle" alt="User Image">
+                                <p>
+                                    <span wicket:id="userRoleNamePopup"></span>
+                                    <small>Member since Nov. 2012</small>
+                                </p>
+                            </li>
+                            <li class="user-footer">
+                                <div class="pull-left">
+                                    <a href="#" class="btn btn-default btn-flat">Profile</a>
+                                </div>
+                                <div class="pull-right">
+                                    <a href="#" wicket:id="logOut" class="btn btn-default btn-flat">Sign out</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- Left side column. contains the logo and sidebar -->
+    <aside class="main-sidebar">
+        <!-- sidebar: style can be found in sidebar.less -->
+        <section class="sidebar">
+            <!-- Sidebar user panel -->
+            <div class="user-panel">
+                <div class="pull-left image">
+                    <img src="" wicket:id="userImageLeft" class="img-circle" alt="User Image">
+                </div>
+                <div class="pull-left info">
+                    <p><span wicket:id="userNameLeft"></span> </p>
+                    <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+                </div>
+            </div>
+            <!-- sidebar menu: : style can be found in sidebar.less -->
+            <ul class="sidebar-menu">
+                <li class="header">MAIN NAVIGATION</li>
+                <li class="treeview" wicket:id="topMenu"><a href="#"><i class="fa fa-dashboard"></i><span class="priv-group" wicket:id="topMenuLabel">Top Menu</span>
+                    <i class="fa fa-angle-left pull-right"></i></a>
+                    <ul class="treeview-menu">
+                        <li wicket:id="menu"><a href="#" wicket:id="menuLink"><i class="fa fa-circle-o"></i><span class="privilege" wicket:id="menuLabel">Menu 1</span></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        <!-- /.sidebar -->
+    </aside>
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+            <h1>
+                <span class="screen-title" wicket:id="screenTitle">Top Menu</span>
+                <small class="screen-sub-title" wicket:id="screenSubTitle">Menu 1</small>
+            </h1>
+        </section>
+
+        <!-- Main content -->
+        <section class="content">
+            <ul wicket:id="feedbackError"></ul>
+            <ul wicket:id="feedbackSuccess"></ul>
+            <div wicket:id="contentParent">
+                <div class="box box-info" wicket:id="content">
+                    Content here
+                </div>
+            </div>
+        </section><!-- /.content -->
+    </div><!-- /.content-wrapper -->
+    <footer class="main-footer">
+        <div class="pull-right hidden-xs">
+            <b>Version</b> 1.0
+        </div>
+        <strong>CBS.</strong> FrontEnd
+    </footer>
+</div><!-- ./wrapper -->
+
+</body>
+</html>
